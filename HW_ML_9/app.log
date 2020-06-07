@@ -1,0 +1,42 @@
+[2020-Jun-06 10:47:22] request from 127.0.0.1: {'ID': 5, 'LicAge': 455, 'RecordBeg': '2004-01-01', 'RecordEnd': '', 'VehAge': 100, 'Gender': 'Male', 'MariStat': 'Alone', 'SocioCateg': 'CSP50', 'VehUsage': 'Private+trip to office', 'DrivAge': 45, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 3}
+[2020-Jun-06 10:47:42] 127.0.0.1 POST http /predict? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "E:\GB\HW_ML_9\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GB\HW_ML_9\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GB\HW_ML_9\app.py", line 39, in predict
+    value_Poisson = prediction_Poisson.as_data_frame()['predict'][0]
+TypeError: list indices must be integers or slices, not str
+
+2020-Jun-06 11:05:28 request from 127.0.0.1: {'ID': 5, 'LicAge': 455, 'RecordBeg': '2004-01-01', 'RecordEnd': '', 'VehAge': 100, 'Gender': 'Male', 'MariStat': 'Alone', 'SocioCateg': 'CSP50', 'VehUsage': 'Private+trip to office', 'DrivAge': 45, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 3}
+2020-Jun-06 11:05:32 127.0.0.1 POST http /predict? 5xx Internal Server Error
+Traceback (most recent call last):
+  File "E:\GB\HW_ML_9\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GB\HW_ML_9\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:/GB/HW_ML_9/HW_ML_9_back_end_postman.py", line 198, in predict
+    value_Poisson  = prediction_Poisson.as_data_frame()['predict'][0]
+TypeError: list indices must be integers or slices, not str
+
+[2020-Jun-06 11:36:30] request from 127.0.0.1: {'ID': 5, 'LicAge': 455, 'RecordBeg': '2004-01-01', 'RecordEnd': '', 'VehAge': 100, 'Gender': 'Male', 'MariStat': 'Alone', 'SocioCateg': 'CSP50', 'VehUsage': 'Private+trip to office', 'DrivAge': 45, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 3}
+[2020-Jun-06 11:36:51] 127.0.0.1 POST http /predict? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "E:\GB\HW_ML_9\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\GB\HW_ML_9\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\GB\HW_ML_9\app.py", line 39, in predict
+    value_Poisson = prediction_Poisson.as_data_frame()['predict'][0]
+TypeError: list indices must be integers or slices, not str
+
+[2020-Jun-06 22:27:08] request from 127.0.0.1: {'ID': 5, 'LicAge': 455, 'RecordBeg': '2004-01-01', 'RecordEnd': '', 'VehAge': 100, 'Gender': 'Male', 'MariStat': 'Alone', 'SocioCateg': 'CSP50', 'VehUsage': 'Private+trip to office', 'DrivAge': 45, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 3}
+[2020-Jun-06 22:27:37] predicted for 29.428685 msec: {'ID': 5, 'value_Poisson': 0.21349671882409446, 'value_Gamma': 1021.9665642961667, 'value_BurningCost': 218.18650822516454}
+
+[2020-Jun-07 08:59:26] request from 127.0.0.1: {'ID': 5, 'LicAge': 455, 'RecordBeg': '2004-01-01', 'RecordEnd': '', 'VehAge': 100, 'Gender': 'Male', 'MariStat': 'Alone', 'SocioCateg': 'CSP50', 'VehUsage': 'Private+trip to office', 'DrivAge': 45, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 3}
+[2020-Jun-07 09:00:03] predicted for 37.380263 msec: {'ID': 5, 'value_Poisson': 0.21349671882409446, 'value_Gamma': 1021.9665642961667, 'value_BurningCost': 218.18650822516454}
+
+[2020-Jun-07 09:11:43] request from 127.0.0.1: {'ID': 5, 'LicAge': 455, 'RecordBeg': '2004-01-01', 'RecordEnd': '', 'VehAge': 100, 'Gender': 'Male', 'MariStat': 'Alone', 'SocioCateg': 'CSP50', 'VehUsage': 'Private+trip to office', 'DrivAge': 45, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 3}
+[2020-Jun-07 09:12:14] predicted for 30.435762 msec: {'ID': 5, 'value_Poisson': 0.21349671882409446, 'value_Gamma': 1021.9665642961667, 'value_BurningCost': 218.18650822516454}
+
